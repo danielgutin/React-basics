@@ -2,9 +2,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 .App {
-  text-align: center;
+ text-align: center;
+ position: relative;
+ height: 100vh;
+ padding: 1rem;
 }
 
+.App h1 {
+ font-size: 4rem;
+}
+
+
+.classRoom {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: #eee;
+ height: 75rem;
+ width: 125rem;
+ padding: 5rem;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: 12rem;
+ grid-gap: 1rem;
+}
+
+
+.Student {
+ position: relative;
+ font-size: 2rem;
+ padding: 2rem;
+ background-color: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+}
+
+.Student p {
+ font-size: 2rem;
+ flex: 1;
+}
+
+
+.Student button {
+ position: absolute;
+ top: 0;
+ left: 0;
+ margin: .5rem;
+ height: 2.5rem;
+ width: 2.5rem;
+ font-size: 1.5rem;
+ background-color: rgb(241, 7, 7);
+ color: #fff;
+ border: none;
+ border-radius: 50%;
+ transition: all .3s ease;
+}
+
+.Student button:hover {
+ background-color: rgb(173, 4, 4);
+ cursor: pointer;
+}
